@@ -1,28 +1,28 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import AutoImport from 'unplugin-auto-import/vite'
-import Components from 'unplugin-vue-components/vite'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
-import Unocss from 'unocss/vite'
-const path = require('path')
+import { defineConfig } from "vite";
+import vue from "@vitejs/plugin-vue";
+import AutoImport from "unplugin-auto-import/vite";
+import Components from "unplugin-vue-components/vite";
+import { ElementPlusResolver } from "unplugin-vue-components/resolvers";
+import Unocss from "unocss/vite";
+const path = require("path");
 
 export default defineConfig({
   resolve:{
     alias: {
-      '~/': `${path.resolve(__dirname, 'src')}/`,
+      "~/": `${path.resolve(__dirname, "src")}/`,
     },
   },
   css: {
     preprocessorOptions: {
       scss: {
-        additionalData: `@use "~/styles/element/index.scss" as *;`,
+        additionalData: "@use \"~/styles/element/index.scss\" as *;",
       },
     },
   },
   plugins: [
     vue(),
     AutoImport({
-      imports: ['@vueuse/core', 'vue']
+      imports: ["@vueuse/core", "vue"]
     }),
     Components({
       resolvers: [
@@ -33,4 +33,4 @@ export default defineConfig({
     }),
     Unocss({  }),
   ]
-})
+});
