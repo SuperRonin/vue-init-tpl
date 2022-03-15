@@ -17,7 +17,9 @@
 const { x, y } = useMouse();
 const online = useOnline();
 const dateVal = ref("");
-debugger
+const str = ref('')
+console.log('init');
+
 </script>
 
 <style lang="scss">

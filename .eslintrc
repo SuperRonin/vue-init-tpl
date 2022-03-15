@@ -4,6 +4,6 @@
     "rules": {
         "semi": ["error", "always"],
         "quotes": ["error", "double"],
-        "no-debugger": ["error", "always"]
+        "no-console": 2
     }
 }
