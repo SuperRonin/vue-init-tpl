@@ -1,9 +1,6 @@
 {
   "name": "vue-init-tpl",
-  "author": {
-    "name": "xuexingwei",
-    "email": "xuexingwei20@163.com"
-  },
+  "author": "Franck Abgrall",
   "private": true,
   "version": "0.0.1",
   "scripts": {
